@@ -1,5 +1,5 @@
 function search() {
-  let list = document.getElementById("towns");
+  let towns = document.getElementById("towns");
   let search = document.getElementById("searchText");
   let result = document.getElementById("result");
 
