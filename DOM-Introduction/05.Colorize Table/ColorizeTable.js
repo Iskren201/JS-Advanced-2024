@@ -1,5 +1,11 @@
 function colorize() {
-  const childrenFirst = document.querySelectorAll("tr");
+  const talbe = document.querySelector("table");
 
-  childrenFirst = document.styleSheets.green;
+  let rows = talbe.querySelectorAll("tr:not(:first-child)");
+
+  for (let i = 0; i < rows.length; i++) {
+    if (i % 2 === 0) {
+      rows[i].style.backgroundColor = "Teal";
+    }
+  }
 }
